@@ -1,0 +1,39 @@
+{
+  "name": "tomtom-cli-template",
+  "description": "Monorepo for tomtom-cli and associated packages",
+  "version": "0.0.1",
+  "private": true,
+  "author": "stomtomyoung@gmail.com",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "changeset:add": "changeset add",
+    "changeset:version": "changeset version",
+    "lint": "eslint ./packages --ext js,ts",
+    "lint:fix": "eslint ./packages --ext js,ts --fix"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.26.2",
+    "@trivago/prettier-plugin-sort-imports": "^4.2.0",
+    "@types/jest": "^29.5.4",
+    "@types/node": "^20.5.7",
+    "@typescript-eslint/eslint-plugin": "^6.5.0",
+    "@typescript-eslint/parser": "^6.5.0",
+    "esbuild": "^0.19.2",
+    "esbuild-jest": "^0.5.0",
+    "esbuild-register": "^3.4.2",
+    "eslint": "^8.48.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "jest": "^29.6.4",
+    "prettier": "^3.0.3",
+    "rimraf": "^5.0.1",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.2.2"
+  },
+  "engines": {
+    "node": ">=16.16.0"
+  },
+  "packageManager": "yarn@1.22.19"
+}
