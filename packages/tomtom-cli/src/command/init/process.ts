@@ -1,10 +1,11 @@
 import { UnexpectedError } from '../../business/error';
-// import type { InitArgs } from '../../types/args';
+import printer from '../../common/printer';
+import { InitArgs } from '../../types/args';
 import { printInitBanner } from './banner';
 
-export async function initProcess() {
+export async function initProcess(args: InitArgs) {
   try {
-    // do something
+    printer.info(args);
 
     printInitBanner();
   } catch (err) {
