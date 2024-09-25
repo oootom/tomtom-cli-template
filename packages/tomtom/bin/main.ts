@@ -11,7 +11,7 @@ function main() {
       '--no-warnings',
       '--experimental-vm-modules',
       ...process.execArgv,
-      path.join(__dirname, '../tomtom-dist/cli.js'),
+      path.join(__dirname, '../cmd-dist/cli.js'),
       ...process.argv.slice(2),
     ],
     { stdio: ['inherit', 'inherit', 'inherit', 'ipc'] },

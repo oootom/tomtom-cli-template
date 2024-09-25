@@ -1,4 +1,4 @@
 node_modules
 
-packages/tomtom-cli/tomtom-bin/*
-packages/tomtom-cli/tomtom-dist/*
+packages/tomtom/cmd-bin
+packages/tomtom/cmd-dist

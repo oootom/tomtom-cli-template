@@ -8,7 +8,7 @@ export function runInTempDir() {
   let tmpDir: string;
 
   beforeEach(() => {
-    tmpDir = fs.realpathSync(fs.mkdtempSync(path.join(os.tmpdir(), 'tomtom-tests')));
+    tmpDir = fs.realpathSync(fs.mkdtempSync(path.join(os.tmpdir(), 'tomtom-test')));
     process.chdir(tmpDir);
     process.env.PWD = tmpDir;
   });

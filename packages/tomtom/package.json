@@ -1,17 +1,16 @@
 {
-  "name": "@tomtoms/yargs-cli",
+  "name": "tomtom",
   "version": "0.0.1",
   "description": "",
   "bin": {
-    "tomtom": "./tomtom-bin/tomtom.js"
+    "tomtom": "./cmd-bin/main.js"
   },
-  "author": "stomtomyoung@gmail.com",
+  "author": "tomtomyang@tencent.com",
   "files": [
-    "./tomtom-bin/tomtom.js",
-    "./tomtom-dist/cli.js"
+    "./cmd-bin/main.js",
+    "./cmd-dist/cli.js"
   ],
   "keywords": [
-    "tomtomyoung",
     "yargs",
     "jest",
     "ink",
@@ -20,7 +19,7 @@
     "typescript"
   ],
   "scripts": {
-    "clean": "rimraf ./tomtom-dist ./tomtom-bin",
+    "clean": "rimraf ./cmd-dist ./cmd-bin",
     "bundle": "node -r esbuild-register ./scripts/bundle.ts",
     "build": "npm run clean && npm run bundle",
     "test": "jest --no-cache",

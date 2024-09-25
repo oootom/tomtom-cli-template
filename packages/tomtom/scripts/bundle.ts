@@ -18,12 +18,12 @@ async function bundle() {
     esbuild.build({
       ...ESBUILD_CONFIG,
       entryPoints: ['./src/cli.ts'],
-      outdir: './tomtom-dist',
+      outdir: './cmd-dist',
     }),
     esbuild.build({
       ...ESBUILD_CONFIG,
-      entryPoints: ['./bin/tomtom.ts'],
-      outdir: './tomtom-bin',
+      entryPoints: ['./bin/main.ts'],
+      outdir: './cmd-bin',
     }),
   ]);
 }
